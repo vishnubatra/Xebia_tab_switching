@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Details</title>
+    <link rel="stylesheet" href="tab.css">
+</head>
+<body>
+  <div class="container">
+  <div class="title-line">
+    <h3 class="number">07 </h3>
+    <h3 class="details">Employment Details</h3>
+</div>
+    <hr>
+    <h3>What's your employment status?</h3>
+    <p>We ask this in order to improve security on your account.</p>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Full-time employed')">Full-time employed</button>
+        <button class="tablinks" onclick="openCity(event, 'Part-time employed')">Part-time employed</button>
+        <button class="tablinks" onclick="openCity(event, 'Self-employed')">Self-employed</button>
+        <button class="tablinks" onclick="openCity(event, 'Retired')">Retired</button>
+        <button class="tablinks" onclick="openCity(event, 'Student')">Student</button>
+        <button class="tablinks" onclick="openCity(event, 'Not in employment')">Not in employment</button>
+    </div>
+  
+    <!-- Tab content -->
+    <div id="Full-time employed" class="tabcontent">
+        <h3>Full-time employed</h3>
+        <p>Full-time employed is the capital city of England.</p>
+    </div>
+  
+    <div id="Part-time employed" class="tabcontent">
+        <h3>Part-time employed</h3>
+        <p>Part-time employed is the capital of France.</p>
+    </div>
+  
+    <div id="Self-employed" class="tabcontent">
+        <h3>What industry do you work in?</h3>
+        <p>Please select the closest option to your industry.</p>
+        <div class="dropdown" onclick="toggleDropdown(this)">
+            <button class="dropbtn">Select your industry<span class="arrow">&#9662;</span></button>
+            <div class="dropdown-content">
+                <a href="#" onclick="selectOption(this)">Agriculture</a>
+                <a href="#" onclick="selectOption(this)">Manufacturing</a>
+            </div>
+        </div>
+
+        <h3>What's your occupation?</h3>
+        <p>Please select the closest option to your occupation.</p>
+        <div class="dropdown" onclick="toggleDropdown(this)">
+            <button class="dropbtn">Select your occupation<span class="arrow">&#9662;</span></button>
+            <div class="dropdown-content">
+                <a href="#" onclick="selectOption(this)">Agriculture</a>
+                <a href="#" onclick="selectOption(this)">Manufacturing</a>
+            </div>
+        </div>
+
+        <h3>What's your annual income?</h3>
+        <p>This includes your salary, benefits, investments or other income you may receive.</p>
+        <div class="annual-income-options">
+            <button onclick="selectIncome(this)">£0-£24,999</button>
+            <button onclick="selectIncome(this)">£25,000-£49,999</button>
+            <button onclick="selectIncome(this)">£50,000-£99,999</button>
+            <button onclick="selectIncome(this)">£100,000-£149,999</button>
+            <button onclick="selectIncome(this)">£150,000+</button>
+        </div>
+    </div>
+
+    <div id="Retired" class="tabcontent">
+        <h3>Retired</h3>
+        <p>Retired is the capital of Japan.</p>
+    </div>
+
+    <div id="Student" class="tabcontent">
+        <h3>Student</h3>
+        <p>Student is the capital of Japan.</p>
+    </div>
+
+    <div id="Not in employment" class="tabcontent">
+        <h3>Not in employment</h3>
+        <p>Not in employment is the capital of Japan.</p>
+    </div>
+    <div class="button-container">
+      <button class="continue-btn">Continue</button>
+  </div>
+    </div>
+   
+    <script src="tab.js"></script>
+</body>
+</html>
